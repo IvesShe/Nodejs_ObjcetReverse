@@ -1,44 +1,3 @@
-# 物件反轉
-
-```js
-// 預想的 Input:
-let inputValue = {
-    hired: {
-        be: {
-            to: {
-                deserve: 'I'
-            }
-        }
-    }
-};
-
-// 希望的 Output:
-let outputValue = {
-    I: {
-        deserve: {
-            to: {
-                be: 'hired'
-            }
-        }
-    }
-};
-
-```
-
-# 思路分析
-
-1. 將每一層的value捉取出來放到陣列arrTemp，包括最原始的inputValue
-2. 反轉arrTemp陣列，並填入該層對應的key，輸出到arrTempNew
-3. 建立新的物件outTemp並打印
-4. 驗證outTemp每一層並打印
-
-# 執行畫面
-
-![image](./images/20210216162137.png)
-
-# 代碼
-
-```js
 // 預想的 Input:
 let inputValue = {
     hired: {
@@ -165,5 +124,3 @@ console.log("驗證每一層的值");
 console.log("outTemp1: ", outTemp[arrTempNew[0]][arrTempNew[1]]);
 console.log("outTemp2: ", outTemp[arrTempNew[0]][arrTempNew[1]][arrTempNew[2]]);
 console.log("outTemp3: ", outTemp[arrTempNew[0]][arrTempNew[1]][arrTempNew[2]][arrTempNew[3]]);
-```
-
